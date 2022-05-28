@@ -1,3 +1,4 @@
 2022/05/28 09:11:52 main.go:15: test
 2022/05/28 09:12:34 main.go:15: test
 2022/05/28 09:43:58 base.go:37: near "AUTONICREMENT": syntax error
+2022/05/28 10:08:19 users.go:28: table users has no column named uuid

@@ -2,9 +2,12 @@ package models
 
 import (
 	"config/config"
+	"crypto/sha1"
 	"database/sql"
 	"fmt"
 	"log"
+
+	"github.com/google/uuid"
 
 	_ "github.com/mattn/go-sqlite3"
 )
@@ -15,26 +18,35 @@ var err error
 
 const (
 	tableNameUser = "users"
-
 )
 
-func init(){
-	Db,err = sql.Open(config.Config.SQLDriver,config.Config.DbName)
-	if err != nil{
+func init() {
+	Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
+	if err != nil {
 		log.Fatalln(err)
 	}
 
 	cmdU := fmt.Sprintf(`CREATE TABLE IF NOT EXISTS %s(
 		id INTEGER PRIMARY KEY AUTOINCREMENT,
-		uid STRING NOT NULL UNIQUE,
+		uuid STRING NOT NULL UNIQUE,
 		name STRING,
 		email STRING,
 		password STRING,
-		created_at DATETIME)`,tableNameUser)
+		created_at DATETIME)`, tableNameUser)
 
-		_,err = Db.Exec(cmdU)
-		if err != nil{
-			log.Println(err)
-		}
+	_, err = Db.Exec(cmdU)
+	if err != nil {
+		log.Println(err)
+	}
 
+}
+
+func createUUID() (uuidobj uuid.UUID) {
+	uuidobj, _ = uuid.NewUUID()
+	return uuidobj
+}
+
+func Encrypt(plaintext string) (cryptext string) {
+	cryptext = fmt.Sprintf("%x", sha1.Sum([]byte(plaintext)))
+	return cryptext
 }
