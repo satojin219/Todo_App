@@ -81,7 +81,6 @@ func (u *User) GetTodosByUser() (todos []Todo, err error) {
 	return todos, err
 }
 
-
 func (t *Todo) UpdateTodo() error {
 	cmd := `update todos set content = $1, user_id = $2 
 	where id = $3`
