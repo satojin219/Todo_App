@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"log"
 
-	// "config/app/controllers"
+	"config/app/controllers"
 	"config/app/models"
 )
 
 func main() {
 
-	// controllers.StartMainServer()
+	controllers.StartMainServer()
 	user, _ := models.GetUserByEmail("test@example.com")
 	fmt.Println(user)
 	session, err := user.CreateSession()
