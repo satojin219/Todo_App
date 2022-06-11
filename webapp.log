@@ -7,3 +7,139 @@
 2022/06/05 14:23:23 main.go:18: sql: no rows in result set
 2022/06/05 14:32:34 users.go:96: table sessions has no column named emial
 2022/06/05 14:32:34 main.go:18: sql: no rows in result set
+2022/06/11 18:25:41 route_main.go:25: no such column: email.created_at
+2022/06/11 18:25:41 route_main.go:25: no such column: email.created_at
+2022/06/11 18:26:08 route_main.go:25: no such column: email.created_at
+2022/06/11 18:26:08 route_main.go:25: no such column: email.created_at
+2022/06/11 18:37:27 server.go:3197: http: panic serving [::1]:51818: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc000163530})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc000154380}, {0x0, 0x0}, {0xc00006f9e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc000154380}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937e78?, {0x7ff6918f1550?, 0xc000154380?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc000154380}, 0xc0000a2500)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c450?}, {0x7ff6918f1550, 0xc000154380}, 0xc0000a2500)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000d80a0, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/06/11 18:37:27 server.go:3197: http: panic serving [::1]:51819: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc000163ad0})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc000154460}, {0x0, 0x0}, {0xc00006f9e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc000154460}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937d88?, {0x7ff6918f1550?, 0xc000154460?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc000154460}, 0xc0000a2600)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c540?}, {0x7ff6918f1550, 0xc000154460}, 0xc0000a2600)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000d8140, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/06/11 18:37:27 server.go:3197: http: panic serving [::1]:51820: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc0001e8030})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc00019e2a0}, {0x0, 0x0}, {0xc00006b9e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc00019e2a0}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937d88?, {0x7ff6918f1550?, 0xc00019e2a0?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc00019e2a0}, 0xc0001cc600)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc000187ad0?}, {0x7ff6918f1550, 0xc00019e2a0}, 0xc0001cc600)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000717c0, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/06/11 18:37:28 server.go:3197: http: panic serving [::1]:51822: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc00008cba0})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc0000c40e0}, {0x0, 0x0}, {0xc0000d19e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc0000c40e0}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937d88?, {0x7ff6918f1550?, 0xc0000c40e0?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc0000c40e0}, 0xc0000a2700)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c5d0?}, {0x7ff6918f1550, 0xc0000c40e0}, 0xc0000a2700)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ce1e0, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/06/11 18:37:28 server.go:3197: http: panic serving [::1]:51823: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 28 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc00008d110})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc0000c41c0}, {0x0, 0x0}, {0xc0000d19e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc0000c41c0}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937e78?, {0x7ff6918f1550?, 0xc0000c41c0?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc0000c41c0}, 0xc0000a2800)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008c630?}, {0x7ff6918f1550, 0xc0000c41c0}, 0xc0000a2800)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001ce280, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
+2022/06/11 18:37:28 server.go:3197: http: panic serving [::1]:51824: open app/views/templates/private_nvabar.html: The system cannot find the file specified.
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	C:/Program Files/Go/src/net/http/server.go:1825 +0xbf
+panic({0x7ff691809f60, 0xc0001e8630})
+	C:/Program Files/Go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	C:/Program Files/Go/src/html/template/template.go:374
+config/app/controllers.generateHTML({0x7ff6918f1550?, 0xc00019e380}, {0x0, 0x0}, {0xc00006b9e0?, 0x3, 0x0?})
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/server.go:17 +0x106
+config/app/controllers.todoNew({0x7ff6918f1550, 0xc00019e380}, 0x0?)
+	C:/Users/satojin/Desktop/Go/todo/app/controllers/route_main.go:38 +0xdf
+net/http.HandlerFunc.ServeHTTP(0x12b32937e78?, {0x7ff6918f1550?, 0xc00019e380?}, 0x7ff69136e825?)
+	C:/Program Files/Go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x7ff6918f1550, 0xc00019e380}, 0xc0000a2900)
+	C:/Program Files/Go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0xc00008d230?}, {0x7ff6918f1550, 0xc00019e380}, 0xc0000a2900)
+	C:/Program Files/Go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0000d81e0, {0x7ff6918f17d8, 0xc0000775c0})
+	C:/Program Files/Go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	C:/Program Files/Go/src/net/http/server.go:3071 +0x4db
